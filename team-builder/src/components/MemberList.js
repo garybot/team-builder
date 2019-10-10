@@ -5,7 +5,7 @@ function MemberList(props) {
   return (
     <div>
       {
-        props.members.map(member => <Member key={member.mname} member={member} />)
+        props.members.map(member => <Member key={member.id} member={member} editor={props.editor} />)
       }
     </div>
   )
